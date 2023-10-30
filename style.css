@@ -47,6 +47,23 @@ body{
     background: var(--bg);
 }
 
+section{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -202,9 +219,69 @@ body{
 
 }
 
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(img/home.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.sobre .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
 
 
-/* media queries responsividade*/
+.sobre .row .image{
+    flex: 1 1 45rem;
+}
+
+.sobre .row .image img{
+    width: 100%;
+}
+
+.sobre .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.sobre .row .content h3{
+    font-size: 3rem;
+    color: #fff; 
+}
+
+.sobre .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+
+/* media queries responsividade */
 @media(max-width:991px){
 
     html{
@@ -214,6 +291,11 @@ body{
     .header{
         padding: 1.5rem 2rem;
     }
+
+    section{
+        padding: 2rem;
+    }
+    
 }
 
 @media(max-width:768px){
